@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-15-REST/Spring-15-REST.iml" filepath="$PROJECT_DIR$/spring-15-REST/Spring-15-REST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-16-REST-Jackson/Spring-16-REST-Jackson.iml" filepath="$PROJECT_DIR$/spring-16-REST-Jackson/Spring-16-REST-Jackson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-19-REST-OpenAPI3/Spring-19-REST-OpenAPI3.iml" filepath="$PROJECT_DIR$/spring-19-REST-OpenAPI3/Spring-19-REST-OpenAPI3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-00-Coupling/spring-00-Coupling.iml" filepath="$PROJECT_DIR$/spring-00-Coupling/spring-00-Coupling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-01-Core-IoC-Bean-Annotation/spring-01-Core-IoC-Bean-Annotation.iml" filepath="$PROJECT_DIR$/spring-01-Core-IoC-Bean-Annotation/spring-01-Core-IoC-Bean-Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-02-Core-IoC-Stereotype-Annotation/spring-02-Core-IoC-Stereotype-Annotation.iml" filepath="$PROJECT_DIR$/spring-02-Core-IoC-Stereotype-Annotation/spring-02-Core-IoC-Stereotype-Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-03-Wiring/spring-03-Wiring.iml" filepath="$PROJECT_DIR$/spring-03-Wiring/spring-03-Wiring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-04-Autowiring/spring-04-Autowiring.iml" filepath="$PROJECT_DIR$/spring-04-Autowiring/spring-04-Autowiring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-05-Core-Abstraction/spring-05-Core-Abstraction.iml" filepath="$PROJECT_DIR$/spring-05-Core-Abstraction/spring-05-Core-Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-06-Core-BeanScope/spring-06-Core-BeanScope.iml" filepath="$PROJECT_DIR$/spring-06-Core-BeanScope/spring-06-Core-BeanScope.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-07-SpringBoot-Demo/spring-07-SpringBoot-Demo.iml" filepath="$PROJECT_DIR$/spring-07-SpringBoot-Demo/spring-07-SpringBoot-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-08-MVC-Controller/spring-08-MVC-Controller.iml" filepath="$PROJECT_DIR$/spring-08-MVC-Controller/spring-08-MVC-Controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-09-MVC-Model/spring-09-MVC-Model.iml" filepath="$PROJECT_DIR$/spring-09-MVC-Model/spring-09-MVC-Model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-10-Thymeleaf/spring-10-Thymeleaf.iml" filepath="$PROJECT_DIR$/spring-10-Thymeleaf/spring-10-Thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-11-Data-TableCreation/spring-11-Data-TableCreation.iml" filepath="$PROJECT_DIR$/spring-11-Data-TableCreation/spring-11-Data-TableCreation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-12-Data-Relationship/spring-12-Data-Relationship.iml" filepath="$PROJECT_DIR$/spring-12-Data-Relationship/spring-12-Data-Relationship.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-13-Data-CinemaLab/spring-13-Data-CinemaLab.iml" filepath="$PROJECT_DIR$/spring-13-Data-CinemaLab/spring-13-Data-CinemaLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-14-Data-Queries/spring-14-Data-Queries.iml" filepath="$PROJECT_DIR$/spring-14-Data-Queries/spring-14-Data-Queries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-17-REST-ConsumingApis/spring-17-REST-ConsumingApis.iml" filepath="$PROJECT_DIR$/spring-17-REST-ConsumingApis/spring-17-REST-ConsumingApis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-18-REST-SchoolLab/spring-18-REST-SchoolLab.iml" filepath="$PROJECT_DIR$/spring-18-REST-SchoolLab/spring-18-REST-SchoolLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-20-REST-Security-Keycloak-LicenseApp/spring-20-REST-Security-Keycloak-LicenseApp.iml" filepath="$PROJECT_DIR$/spring-20-REST-Security-Keycloak-LicenseApp/spring-20-REST-Security-Keycloak-LicenseApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-20-REST-Security-Keycloak-OrganizationsApp/spring-20-REST-Security-Keycloak-OrganizationsApp.iml" filepath="$PROJECT_DIR$/spring-20-REST-Security-Keycloak-OrganizationsApp/spring-20-REST-Security-Keycloak-OrganizationsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-21-AOP/spring-21-AOP.iml" filepath="$PROJECT_DIR$/spring-21-AOP/spring-21-AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/spring-22-UnitTesting-JUnit5.iml" filepath="$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/spring-22-UnitTesting-JUnit5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-23-UnitTesting-Mockito/spring-23-UnitTesting-Mockito.iml" filepath="$PROJECT_DIR$/spring-23-UnitTesting-Mockito/spring-23-UnitTesting-Mockito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-24-UnitTesting-MockMVC/spring-24-UnitTesting-MockMVC.iml" filepath="$PROJECT_DIR$/spring-24-UnitTesting-MockMVC/spring-24-UnitTesting-MockMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-training.iml" filepath="$PROJECT_DIR$/.idea/spring-training.iml" />
+    </modules>
+  </component>
+</project>

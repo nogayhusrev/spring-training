@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-21-AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-15-REST/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-03-Wiring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-00-Coupling/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-09-MVC-Model/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-10-Thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-04-Autowiring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-14-Data-Queries/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-16-REST-Jackson/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-19-REST-OpenAPI3/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-06-Core-BeanScope/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-08-MVC-Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-13-Data-CinemaLab/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-18-REST-SchoolLab/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-07-SpringBoot-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-05-Core-Abstraction/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-12-Data-Relationship/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-11-Data-TableCreation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-17-REST-ConsumingApis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-23-UnitTesting-Mockito/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-24-UnitTesting-MockMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-01-Core-IoC-Bean-Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-02-Core-IoC-Stereotype-Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-20-REST-Security-Keycloak-LicenseApp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-20-REST-Security-Keycloak-OrganizationsApp/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
+</project>
