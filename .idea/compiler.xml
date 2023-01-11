@@ -15,11 +15,11 @@
         <module name="spring-00-Coupling" />
         <module name="spring-01-Core-IoC-Bean-Annotation" />
         <module name="spring-05-Core-Abstraction" />
+        <module name="spring-09-MVC-Model" />
+        <module name="spring-08-MVC-Controller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-08-MVC-Controller" target="11" />
-      <module name="spring-09-MVC-Model" target="11" />
       <module name="spring-10-Thymeleaf" target="11" />
       <module name="spring-11-Data-TableCreation" target="11" />
       <module name="spring-12-Data-Relationship" target="11" />
