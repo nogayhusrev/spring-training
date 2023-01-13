@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-02-Core-IoC-Stereotype-Annotation" />
+        <module name="spring-10-Tyhmeleaf" />
         <module name="spring-03-Wiring" />
         <module name="spring-04-Autowiring" />
         <module name="spring-06-Core-BeanScope" />
@@ -47,6 +48,7 @@
       <module name="spring-08-MVC-Controller" options="-parameters" />
       <module name="spring-09-MVC-Model" options="-parameters" />
       <module name="spring-10-Thymeleaf" options="-parameters" />
+      <module name="spring-10-Tyhmeleaf" options="-parameters" />
       <module name="spring-11-Data-TableCreation" options="-parameters" />
       <module name="spring-12-Data-Relationship" options="-parameters" />
       <module name="spring-13-Data-CinemaLab" options="-parameters" />
