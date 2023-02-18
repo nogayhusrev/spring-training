@@ -6,5 +6,7 @@
     <mapping directory="$PROJECT_DIR$/spring-08-MVC-Controller" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-09-MVC-Model" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-10-Tyhmeleaf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-12-Data-Relationship" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-13-Data-CinemaLab" vcs="Git" />
   </component>
 </project>

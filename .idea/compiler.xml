@@ -7,6 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-13-Data-CinemaLab" />
+        <module name="spring-11-Data-TableCreation" />
         <module name="spring-03-Wiring" />
         <module name="spring-01-Core-IoC-Bean-Annotation" />
         <module name="spring-05-Core-Abstraction" />
@@ -14,20 +16,17 @@
         <module name="spring-08-MVC-Controller" />
         <module name="spring-02-Core-IoC-Stereotype-Annotation" />
         <module name="spring-10-Tyhmeleaf" />
+        <module name="spring-12-Data-Relationship" />
         <module name="spring-04-Autowiring" />
         <module name="spring_training (1)" />
         <module name="spring-06-Core-BeanScope" />
         <module name="spring-07-SpringBoot-Demo" />
         <module name="spring_training" />
-        <module name="spring-11-data-TableCreation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-00-Coupling" target="11" />
       <module name="spring-10-Thymeleaf" target="11" />
-      <module name="spring-11-Data-TableCreation" target="11" />
-      <module name="spring-12-Data-Relationship" target="11" />
-      <module name="spring-13-Data-CinemaLab" target="11" />
       <module name="spring-14-Data-Queries" target="11" />
       <module name="Spring-15-REST" target="11" />
       <module name="Spring-16-REST-Jackson" target="11" />
@@ -53,7 +52,6 @@
       <module name="spring-10-Thymeleaf" options="-parameters" />
       <module name="spring-10-Tyhmeleaf" options="-parameters" />
       <module name="spring-11-Data-TableCreation" options="-parameters" />
-      <module name="spring-11-data-TableCreation" options="-parameters" />
       <module name="spring-12-Data-Relationship" options="-parameters" />
       <module name="spring-13-Data-CinemaLab" options="-parameters" />
       <module name="spring-14-Data-Queries" options="-parameters" />
