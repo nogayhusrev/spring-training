@@ -1,10 +1,12 @@
 package com.nogayhusrev.dto;
 
-import com.nogayhusrev.enums.UserRole;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import com.nogayhusrev.enums.UserRole;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
@@ -19,7 +21,7 @@ public class UserDTO {
     private String username;
     private UserRole role;
 
-    @JsonManagedReference  // This field is going to be serialized
+    @JsonManagedReference // This field is going to be serialized
     private AccountDTO account;
 
 }

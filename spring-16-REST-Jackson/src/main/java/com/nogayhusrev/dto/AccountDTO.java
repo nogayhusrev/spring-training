@@ -3,12 +3,14 @@ package com.nogayhusrev.dto;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//@JsonIgnoreProperties(value = {"address", "country"}, ignoreUnknown = true)
+//@JsonIgnoreProperties(value = {"address","country","state"}, ignoreUnknown = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AccountDTO {
 
@@ -21,7 +23,7 @@ public class AccountDTO {
     private Integer age;
     private String postalCode;
 
-    @JsonBackReference  // This field is not going to be serialized
+    @JsonBackReference // This field is not going to be serialized
     private UserDTO user;
 
 }
