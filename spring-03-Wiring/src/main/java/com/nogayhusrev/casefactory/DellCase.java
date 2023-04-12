@@ -2,9 +2,9 @@ package com.nogayhusrev.casefactory;
 
 public class DellCase extends Case {
 
-    public DellCase(String model, String manufacturer, String powerSupply,Dimensions dimensions) {
+    public DellCase(String model, String manufacturer, String powerSupply, Dimensions dimensions) {
 
-        super(model, manufacturer, powerSupply,dimensions);
+        super(model, manufacturer, powerSupply, dimensions);
     }
 
     public void pressPowerButton() {

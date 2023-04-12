@@ -14,7 +14,7 @@ public class Dimensions {
     private int height;
     private int depth;
 
-    public void pressPowerButton(){
+    public void pressPowerButton() {
         System.out.println("Power button pressed");
     }
 }

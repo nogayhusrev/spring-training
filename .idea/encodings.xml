@@ -9,6 +9,10 @@
     <file url="file://$PROJECT_DIR$/spring-02-Core-IoC-Stereotype-Annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-03-Wiring/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-03-Wiring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-04-Autowiring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-04-Autowiring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-05-Core-Abstraction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-05-Core-Abstraction/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

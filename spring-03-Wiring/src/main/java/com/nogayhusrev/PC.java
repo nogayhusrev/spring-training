@@ -4,7 +4,6 @@ import com.nogayhusrev.casefactory.Case;
 import com.nogayhusrev.monitorfactory.Monitor;
 import com.nogayhusrev.motherboardfactory.Motherboard;
 import lombok.Getter;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Getter
 public class PC {
@@ -13,7 +12,7 @@ public class PC {
     private Monitor monitor;
     private Motherboard motherboard;
 
-    
+
     public PC(Case theCase, Monitor monitor, Motherboard motherboard) {
         this.theCase = theCase;
         this.monitor = monitor;
