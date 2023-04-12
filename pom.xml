@@ -16,6 +16,7 @@
         <module>spring-04-Autowiring</module>
         <module>spring-05-Core-Abstraction</module>
         <module>spring-06-Core-BeanScope</module>
+        <module>spring-07-SpringBoot-Demo</module>
     </modules>
 
     <properties>
