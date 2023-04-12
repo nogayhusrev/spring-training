@@ -7,4 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.nogayhusrev.streotype_annotation")
 public class PcConfig {
 
+
+    
+
 }
