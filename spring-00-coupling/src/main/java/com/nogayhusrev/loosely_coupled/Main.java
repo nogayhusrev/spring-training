@@ -8,7 +8,6 @@ import com.nogayhusrev.loosely_coupled.motherboardfactory.AsusMotherboard;
 import com.nogayhusrev.loosely_coupled.motherboardfactory.Motherboard;
 
 
-
 public class Main {
     public static void main(String[] args) {
 
@@ -16,7 +15,7 @@ public class Main {
         Case theCase = new DellCase("220B", "Dell", "240");
         Motherboard theMotherboard = new AsusMotherboard("BJ-200", "Asus", 4, 6, "v2.44");
 
-        PC myPc = new PC(theCase,theMonitor,theMotherboard);
+        PC myPc = new PC(theCase, theMonitor, theMotherboard);
 
         myPc.powerUp();
 

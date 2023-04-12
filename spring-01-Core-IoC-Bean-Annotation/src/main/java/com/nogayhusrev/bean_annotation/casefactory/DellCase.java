@@ -1,4 +1,4 @@
-package com.nogayhusrev.loosely_coupled.casefactory;
+package com.nogayhusrev.bean_annotation.casefactory;
 
 import lombok.Getter;
 import lombok.Setter;

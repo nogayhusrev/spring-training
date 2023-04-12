@@ -1,4 +1,4 @@
-package com.nogayhusrev.loosely_coupled.monitorfactory;
+package com.nogayhusrev.bean_annotation.monitorfactory;
 
 import lombok.Getter;
 import lombok.Setter;
