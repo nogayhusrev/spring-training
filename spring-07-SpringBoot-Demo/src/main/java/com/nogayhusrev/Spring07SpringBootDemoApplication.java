@@ -9,21 +9,20 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class Spring07SpringBootDemoApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Comment comment  = new Comment();
-		comment.setAuthor("Johnson");
-		comment.setText("Spring Framework");
+        Comment comment = new Comment();
+        comment.setAuthor("Johnson");
+        comment.setText("Spring Framework");
 
-		ApplicationContext container = SpringApplication.run(Spring07SpringBootDemoApplication.class, args);
+        ApplicationContext container = SpringApplication.run(Spring07SpringBootDemoApplication.class, args);
 
-		CommentService commentService = container.getBean(CommentService.class);
-		commentService.publishComment(comment);
+        CommentService commentService = container.getBean(CommentService.class);
+        commentService.publishComment(comment);
 
-		commentService.printConfigData();
-		commentService.printDbConfigData();
-	}
-
+        commentService.printConfigData();
+        commentService.printDbConfigData();
+    }
 
 
 }

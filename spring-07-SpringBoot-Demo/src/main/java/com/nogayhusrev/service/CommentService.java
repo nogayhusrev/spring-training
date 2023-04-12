@@ -23,7 +23,7 @@ public class CommentService {
         this.dbConfigData = dbConfigData;
     }
 
-    public void publishComment(Comment comment){
+    public void publishComment(Comment comment) {
         commentRepository.storeComment(comment);
         commentNotificationProxy.sendComment(comment);
     }
@@ -35,7 +35,7 @@ public class CommentService {
 
     }
 
-    public void printDbConfigData(){
+    public void printDbConfigData() {
         System.out.println(dbConfigData.getUsername());
         System.out.println(dbConfigData.getPassword());
         System.out.println(dbConfigData.getType());

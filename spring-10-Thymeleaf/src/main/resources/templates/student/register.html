@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title th:text="#{index.page.title}"></title>
@@ -20,8 +20,6 @@
 <img th:src="@{/images/welcome-38249.png}">
 
 
-
-
 <!--Display Value of model-->
 <h2 th:text="${students.get(0).firstName}"></h2>
 <h2 th:text="${students.get(0).lastName}"></h2>
@@ -32,7 +30,7 @@
 
 <!--Link-->
 <h2>
-<a th:href="@{https://nogayhusrev.com}">Nogay Page</a>
+    <a th:href="@{https://nogayhusrev.com}">Nogay Page</a>
 </h2>
 
 <h2>
@@ -91,14 +89,6 @@
     <span th:if="${students.get(0).getState()=='Arizona'}">Arizona</span>
     <span th:unless="${students.get(0).getState()=='Arizona'}">No Arizona</span>
 </div>
-
-
-
-
-
-
-
-
 
 
 </body>
