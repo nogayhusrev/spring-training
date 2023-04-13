@@ -1,7 +1,7 @@
 package com.nogayhusrev.dto;
 
-import com.nogayhusrev.enums.Status;
 import com.fasterxml.jackson.annotation.*;
+import com.nogayhusrev.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,7 +34,6 @@ public class ParentDTO {
     private LocalDate birthday;
 
     private Status status;
-
     @JsonManagedReference(value = "parent-address-reference")
     private AddressDTO address;
 

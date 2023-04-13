@@ -1,4 +1,3 @@
-
 package com.nogayhusrev.repository;
 
 import com.nogayhusrev.entity.Parent;

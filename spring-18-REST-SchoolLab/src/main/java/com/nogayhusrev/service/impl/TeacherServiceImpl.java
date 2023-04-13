@@ -2,9 +2,9 @@ package com.nogayhusrev.service.impl;
 
 import com.nogayhusrev.dto.TeacherDTO;
 import com.nogayhusrev.entity.Teacher;
-import com.nogayhusrev.util.MapperUtil;
 import com.nogayhusrev.repository.TeacherRepository;
 import com.nogayhusrev.service.TeacherService;
+import com.nogayhusrev.util.MapperUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

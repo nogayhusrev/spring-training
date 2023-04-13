@@ -1,4 +1,3 @@
-
 package com.nogayhusrev.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

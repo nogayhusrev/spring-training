@@ -2,9 +2,9 @@ package com.nogayhusrev.service.impl;
 
 import com.nogayhusrev.dto.ParentDTO;
 import com.nogayhusrev.entity.Parent;
-import com.nogayhusrev.util.MapperUtil;
 import com.nogayhusrev.repository.ParentRepository;
 import com.nogayhusrev.service.ParentService;
+import com.nogayhusrev.util.MapperUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

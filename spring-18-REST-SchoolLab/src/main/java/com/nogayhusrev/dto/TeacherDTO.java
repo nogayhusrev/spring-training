@@ -1,8 +1,8 @@
 package com.nogayhusrev.dto;
 
+import com.fasterxml.jackson.annotation.*;
 import com.nogayhusrev.enums.EducationLevel;
 import com.nogayhusrev.enums.Status;
-import com.fasterxml.jackson.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,7 +27,6 @@ public class TeacherDTO {
 
     private String email;
     private String username;
-
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 

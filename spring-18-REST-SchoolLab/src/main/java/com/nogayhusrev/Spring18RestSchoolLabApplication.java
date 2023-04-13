@@ -10,13 +10,13 @@ import org.springframework.context.annotation.Bean;
 @EnableFeignClients
 public class Spring18RestSchoolLabApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Spring18RestSchoolLabApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Spring18RestSchoolLabApplication.class, args);
+    }
 
-	@Bean
-	public ModelMapper mapper() {
-		return new ModelMapper();
-	}
+    @Bean
+    public ModelMapper mapper() {
+        return new ModelMapper();
+    }
 
 }

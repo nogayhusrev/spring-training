@@ -29,34 +29,63 @@ public class SchoolController {
     }
 
     @GetMapping("/teachers")
-    public List<TeacherDTO> readAllTeacher() {
+    public List<TeacherDTO> readAllTeachers() {
         List<TeacherDTO> teachers = teacherService.findAll();
+
         return teachers;
     }
 
     @GetMapping("/students")
     public ResponseEntity<ResponseWrapper> readAllStudents() {
+
         return ResponseEntity.ok(new ResponseWrapper("Students are successfully retrieved", studentService.findAll()));
     }
 
+
     @GetMapping("/parents")
     public ResponseEntity<ResponseWrapper> readAllParents() {
-        ResponseWrapper responseWrapper =
-                new ResponseWrapper(true, "Parents are retrieved successfully",
-                        HttpStatus.OK.value(), parentService.findAll());
+
+        ResponseWrapper responseWrapper = new ResponseWrapper(true, "Parents are retrieved successfully",
+                HttpStatus.OK.value(), parentService.findAll());
+
         return ResponseEntity.status(HttpStatus.OK).body(responseWrapper);
     }
 
     @GetMapping("/address/{id}")
-    public ResponseEntity<ResponseWrapper> getAddress(@PathVariable("id") Long id) throws Exception {
+    public ResponseEntity<ResponseWrapper> readAllAddress(@PathVariable("id") Long id) throws Exception {
+
         AddressDTO addressDTO = addressService.findById(id);
+
         return ResponseEntity.ok(new ResponseWrapper("Address is successfully retrieved", addressDTO));
+
+
     }
+
 
     @PutMapping("/address/{id}")
     public AddressDTO updateAddress(@PathVariable("id") Long id, @RequestBody AddressDTO addressDTO) throws Exception {
+
         addressDTO.setId(id);
         return addressService.update(addressDTO);
     }
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

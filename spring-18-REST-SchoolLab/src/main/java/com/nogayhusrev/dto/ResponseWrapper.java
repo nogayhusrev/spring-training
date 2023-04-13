@@ -6,8 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.http.HttpStatus;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseWrapper {
@@ -20,8 +20,8 @@ public class ResponseWrapper {
     public ResponseWrapper(String message, Object data) {
         this.success = true;
         this.message = message;
-        this.code = HttpStatus.OK.value();
         this.data = data;
+        this.code = HttpStatus.OK.value();
     }
 
     public ResponseWrapper(String message) {
@@ -29,5 +29,4 @@ public class ResponseWrapper {
         this.message = message;
         this.code = HttpStatus.OK.value();
     }
-
 }

@@ -2,9 +2,9 @@ package com.nogayhusrev.service.impl;
 
 import com.nogayhusrev.dto.CourseDTO;
 import com.nogayhusrev.entity.Course;
-import com.nogayhusrev.util.MapperUtil;
 import com.nogayhusrev.repository.CourseRepository;
 import com.nogayhusrev.service.CourseService;
+import com.nogayhusrev.util.MapperUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,7 +25,7 @@ public class CourseServiceImpl implements CourseService {
     public List<CourseDTO> findAll() {
         return courseRepository.findAll()
                 .stream()
-                .map(course -> mapperUtil.convert(course,new CourseDTO()))
+                .map(course -> mapperUtil.convert(course, new CourseDTO()))
                 .collect(Collectors.toList());
     }
 
