@@ -1,10 +1,13 @@
 package com.nogayhusrev.service.impl;
 
+import com.nogayhusrev.client.WeatherApiClient;
 import com.nogayhusrev.dto.AddressDTO;
+import com.nogayhusrev.dto.WeatherDTO;
 import com.nogayhusrev.entity.Address;
 import com.nogayhusrev.repository.AddressRepository;
 import com.nogayhusrev.service.AddressService;
 import com.nogayhusrev.util.MapperUtil;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,9 +20,15 @@ public class AddressServiceImpl implements AddressService {
     private final AddressRepository addressRepository;
     private final MapperUtil mapperUtil;
 
-    public AddressServiceImpl(AddressRepository addressRepository, MapperUtil mapperUtil) {
+    private final WeatherApiClient weatherApiClient;
+
+    @Value("${access_key}")
+    private String access_key;
+
+    public AddressServiceImpl(AddressRepository addressRepository, MapperUtil mapperUtil, WeatherApiClient weatherApiClient) {
         this.addressRepository = addressRepository;
         this.mapperUtil = mapperUtil;
+        this.weatherApiClient = weatherApiClient;
     }
 
     @Override
@@ -34,7 +43,11 @@ public class AddressServiceImpl implements AddressService {
     public AddressDTO findById(Long id) throws Exception {
         Address foundAddress = addressRepository.findById(id)
                 .orElseThrow(() -> new Exception("No Address Found!"));
-        return mapperUtil.convert(foundAddress, new AddressDTO());
+
+        AddressDTO addressDTO = mapperUtil.convert(foundAddress, new AddressDTO());
+        addressDTO.setCurrentTemperature(getCurrentWeather(addressDTO.getCity()).getCurrent().getTemperature());
+
+        return addressDTO;
     }
 
     @Override
@@ -67,5 +80,13 @@ public class AddressServiceImpl implements AddressService {
         return mapperUtil.convert(addressToSave, new AddressDTO());
 
     }
+
+
+    private WeatherDTO getCurrentWeather(String city){
+
+        return weatherApiClient.getCurrentWeather(access_key, city);
+    }
+
+
 
 }
