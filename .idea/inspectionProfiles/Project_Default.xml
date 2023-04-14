@@ -43,6 +43,9 @@
       <option name="excludeList">
         <list>
           <option value="org.springframework.cloud:spring-cloud-starter-openfeign" />
+          <option value="org.modelmapper:modelmapper" />
+          <option value="com.fasterxml.jackson.dataformat:jackson-dataformat-xml" />
+          <option value="org.springdoc:springdoc-openapi-ui" />
         </list>
       </option>
     </inspection_tool>
