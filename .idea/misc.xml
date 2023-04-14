@@ -17,6 +17,11 @@
         <option value="$PROJECT_DIR$/spring-12-Data-Relationship/pom.xml" />
         <option value="$PROJECT_DIR$/spring-13-Data-CinemaLab/pom.xml" />
         <option value="$PROJECT_DIR$/spring-14-Data-Queries/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-15-REST/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-16-REST-Jackson/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-17-REST-ConsumingApis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-18-REST-SchoolLab/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-19-REST-OpenAPI3/pom.xml" />
       </list>
     </option>
   </component>
