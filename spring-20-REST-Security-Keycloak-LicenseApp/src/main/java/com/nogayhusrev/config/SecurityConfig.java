@@ -1,4 +1,4 @@
-package com.cydeo.config;
+package com.nogayhusrev.config;
 
 import org.keycloak.adapters.KeycloakConfigResolver;
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;

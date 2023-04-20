@@ -1,6 +1,6 @@
-package com.cydeo.client;
+package com.nogayhusrev.client;
 
-import com.cydeo.model.Organization;
+import com.nogayhusrev.model.Organization;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

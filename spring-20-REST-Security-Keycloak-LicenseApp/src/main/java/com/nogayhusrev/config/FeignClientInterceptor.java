@@ -1,4 +1,4 @@
-package com.cydeo.config;
+package com.nogayhusrev.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;

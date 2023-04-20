@@ -1,6 +1,6 @@
-package com.cydeo.repository;
+package com.nogayhusrev.repository;
 
-import com.cydeo.model.License;
+import com.nogayhusrev.model.License;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

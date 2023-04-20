@@ -1,7 +1,7 @@
-package com.cydeo.controller;
+package com.nogayhusrev.controller;
 
-import com.cydeo.model.License;
-import com.cydeo.service.LicenseService;
+import com.nogayhusrev.model.License;
+import com.nogayhusrev.service.LicenseService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

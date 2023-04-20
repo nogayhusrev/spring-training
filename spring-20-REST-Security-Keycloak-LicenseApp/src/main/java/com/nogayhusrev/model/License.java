@@ -1,4 +1,4 @@
-package com.cydeo.model;
+package com.nogayhusrev.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;

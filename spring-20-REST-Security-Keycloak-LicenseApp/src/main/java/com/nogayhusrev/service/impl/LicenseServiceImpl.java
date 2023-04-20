@@ -1,10 +1,10 @@
-package com.cydeo.service.impl;
+package com.nogayhusrev.service.impl;
 
-import com.cydeo.model.License;
-import com.cydeo.model.Organization;
-import com.cydeo.repository.LicenseRepository;
-import com.cydeo.client.OrganizationFeignClient;
-import com.cydeo.service.LicenseService;
+import com.nogayhusrev.model.License;
+import com.nogayhusrev.model.Organization;
+import com.nogayhusrev.repository.LicenseRepository;
+import com.nogayhusrev.client.OrganizationFeignClient;
+import com.nogayhusrev.service.LicenseService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

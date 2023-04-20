@@ -1,6 +1,6 @@
-package com.cydeo.service;
+package com.nogayhusrev.service;
 
-import com.cydeo.model.License;
+import com.nogayhusrev.model.License;
 
 import java.util.List;
 
