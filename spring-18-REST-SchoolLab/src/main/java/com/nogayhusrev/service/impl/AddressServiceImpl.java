@@ -85,11 +85,10 @@ public class AddressServiceImpl implements AddressService {
     }
 
 
-    private WeatherDTO getCurrentWeather(String city){
+    private WeatherDTO getCurrentWeather(String city) {
 
         return weatherApiClient.getCurrentWeather(access_key, city);
     }
-
 
 
 }

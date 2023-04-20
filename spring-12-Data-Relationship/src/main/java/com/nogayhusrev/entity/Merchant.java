@@ -27,7 +27,6 @@ public class Merchant {
     private List<Payment> paymentList;
 
 
-
     public Merchant(String name, String code, BigDecimal transactionFee, BigDecimal commissionRate, Integer payoutDelayCount) {
         this.name = name;
         this.code = code;

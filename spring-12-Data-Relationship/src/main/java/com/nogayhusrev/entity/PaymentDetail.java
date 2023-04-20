@@ -23,7 +23,7 @@ public class PaymentDetail {
     @Column(columnDefinition = "DATE")
     private LocalDate payoutDate;
 
-    @OneToOne(mappedBy = "paymentDetail",cascade=CascadeType.ALL)
+    @OneToOne(mappedBy = "paymentDetail", cascade = CascadeType.ALL)
     @JoinColumn(name = "payment_id")
     private Payment payment;
 

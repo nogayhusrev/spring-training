@@ -1,26 +1,21 @@
-
 package com.nogayhusrev.dto;
 
+import com.fasterxml.jackson.annotation.*;
+
+import javax.annotation.Generated;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import javax.annotation.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "name",
-    "username",
-    "email",
-    "address",
-    "phone",
-    "website",
-    "company"
+        "id",
+        "name",
+        "username",
+        "email",
+        "address",
+        "phone",
+        "website",
+        "company"
 })
 @Generated("jsonschema2pojo")
 public class User {

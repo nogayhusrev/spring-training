@@ -1,9 +1,9 @@
 package com.nogayhusrev.service.impl;
 
+import com.nogayhusrev.client.OrganizationFeignClient;
 import com.nogayhusrev.model.License;
 import com.nogayhusrev.model.Organization;
 import com.nogayhusrev.repository.LicenseRepository;
-import com.nogayhusrev.client.OrganizationFeignClient;
 import com.nogayhusrev.service.LicenseService;
 import org.springframework.stereotype.Service;
 

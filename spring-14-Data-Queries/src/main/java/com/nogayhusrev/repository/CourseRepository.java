@@ -8,10 +8,10 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.stream.Stream;
 
-public interface CourseRepository extends JpaRepository<Course,Long> {
+public interface CourseRepository extends JpaRepository<Course, Long> {
 
     //Find all courses by category
-    List<Course>  findByCategory(String category);
+    List<Course> findByCategory(String category);
 
     //Find all courses by category and order the entities by name
     List<Course> findByCategoryOrderByName(String category);
@@ -29,8 +29,7 @@ public interface CourseRepository extends JpaRepository<Course,Long> {
     Stream<Course> streamAllByCategory(String category);
 
     @Query("SELECT c FROM Course c WHERE c.category = :category AND c.rating > :rating")
-    List<Course> retrieveAllByCategoryAndRatingGreaterThan(@Param("category") String category,@Param("rating") int rating);
-
+    List<Course> retrieveAllByCategoryAndRatingGreaterThan(@Param("category") String category, @Param("rating") int rating);
 
 
 }

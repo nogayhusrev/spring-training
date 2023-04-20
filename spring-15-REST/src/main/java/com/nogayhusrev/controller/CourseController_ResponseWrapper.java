@@ -20,17 +20,17 @@ public class CourseController_ResponseWrapper {
     }
 
     @GetMapping
-    public ResponseEntity<ResponseWrapper> getAllCourses(){
+    public ResponseEntity<ResponseWrapper> getAllCourses() {
 
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
-                .header("Version","Nogay.V3")
-                .body(new ResponseWrapper("courses successfully retrieved",courseService.getCourses()));
+                .header("Version", "Nogay.V3")
+                .body(new ResponseWrapper("courses successfully retrieved", courseService.getCourses()));
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<ResponseWrapper> getCourseById(@PathVariable("id") long courseId){
-        return ResponseEntity.ok(new ResponseWrapper("course:" + courseId + "retrieved",courseService.getCourseById(courseId)));
+    public ResponseEntity<ResponseWrapper> getCourseById(@PathVariable("id") long courseId) {
+        return ResponseEntity.ok(new ResponseWrapper("course:" + courseId + "retrieved", courseService.getCourseById(courseId)));
 
     }
 }

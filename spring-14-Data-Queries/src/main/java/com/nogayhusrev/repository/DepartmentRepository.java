@@ -6,14 +6,16 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface DepartmentRepository extends JpaRepository<Department,String> {
+public interface DepartmentRepository extends JpaRepository<Department, String> {
 
     //Display all departments in the Furniture Department
     List<Department> findByDepartment(String department);
 
     //Display all departments in the Health Division
     List<Department> findByDivision(String division);
+
     List<Department> findByDivisionIs(String division);
+
     List<Department> findByDivisionEquals(String division);
 
     //Display all departments with division name ends with 'ics'
@@ -24,12 +26,6 @@ public interface DepartmentRepository extends JpaRepository<Department,String> {
 
     @Query("SELECT d FROM Department d WHERE d.division IN ?1")
     List<Department> retrieveDepartmentDivision(List<String> division);
-
-
-
-
-
-
 
 
 }

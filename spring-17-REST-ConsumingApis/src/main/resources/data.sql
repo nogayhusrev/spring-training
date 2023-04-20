@@ -15,10 +15,14 @@ VALUES ('Hall 1 - EMPIRE', 'McDonald', (SELECT l.id from location l WHERE l.name
        ('Hall 3 - STREET 14', 'MySpace', (SELECT l.id from location l WHERE l.name = 'AMC 34th Street 14'), false),
        ('Hall 4 - STREET 14', 'PlayStation', (SELECT l.id from location l WHERE l.name = 'AMC 34th Street 14'), false),
 
-       ('Hall 1 - SQUARE 13', 'Walt Disney', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'), false),
-       ('Hall 2 - SQUARE 13', 'Sony Corporation', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'), false),
-       ('Hall 3 - SQUARE 13', 'Warner Bros', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'), false),
-       ('Hall 4 - SQUARE 13', 'PlayStation', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'), false),
+       ('Hall 1 - SQUARE 13', 'Walt Disney', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'),
+        false),
+       ('Hall 2 - SQUARE 13', 'Sony Corporation', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'),
+        false),
+       ('Hall 3 - SQUARE 13', 'Warner Bros', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'),
+        false),
+       ('Hall 4 - SQUARE 13', 'PlayStation', (SELECT l.id from location l WHERE l.name = 'AMC Lincoln Square 13'),
+        false),
 
        ('Hall 1 - VILLAGE 7', 'Du Pont', (SELECT l.id from location l WHERE l.name = 'AMC Village 7'), false),
        ('Hall 2 - VILLAGE 7', 'Kodak', (SELECT l.id from location l WHERE l.name = 'AMC Village 7'), false),
@@ -185,27 +189,135 @@ INSERT INTO ticket (date_time, row_number, seat_number, movie_cinema_id, user_ac
 VALUES ('2020-12-05 20:00:00', 14, 15, (SELECT id
                                         FROM movie_cinema
                                         WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE')
-                                          AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman') LIMIT 1),
-       (SELECT id from user_account WHERE email = 'josie_story@email.com'), false),
-                   ('2022-05-02 20:00:00', 18, 7, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman') LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'), false),
-                   ('2020-12-05 20:00:00', 9, 9, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman') LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
-                   ('2020-12-05 20:00:00', 12, 18, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman') LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'), false),
-                   ('2020-12-05 20:00:00', 11, 5, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman') LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'), false),
+                                          AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman')
+                                        LIMIT 1),
+        (SELECT id from user_account WHERE email = 'josie_story@email.com'), false),
+       ('2022-05-02 20:00:00', 18, 7, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE')
+                                         AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'),
+        false),
+       ('2020-12-05 20:00:00', 9, 9, (SELECT id
+                                      FROM movie_cinema
+                                      WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE')
+                                        AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman')
+                                      LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
+       ('2020-12-05 20:00:00', 12, 18, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE')
+                                          AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'),
+        false),
+       ('2020-12-05 20:00:00', 11, 5, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 1 - EMPIRE')
+                                         AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Gentleman')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'),
+        false),
 
-                   ('2020-12-06 20:45:00', 14, 15, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet') LIMIT 1), (SELECT id from user_account WHERE email = 'josie_story@email.com'), false),
-                   ('2020-12-06 20:45:00', 18, 7, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet') LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'), false),
-                   ('2020-12-06 20:45:00', 9, 9, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet') LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
-                   ('2020-12-06 20:45:00', 12, 18, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet') LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'), false),
-                   ('2020-12-06 20:45:00', 11, 5, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet') LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'), false),
+       ('2020-12-06 20:45:00', 14, 15, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id =
+                                              (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13')
+                                          AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'josie_story@email.com'),
+        false),
+       ('2020-12-06 20:45:00', 18, 7, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13')
+                                         AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'),
+        false),
+       ('2020-12-06 20:45:00', 9, 9, (SELECT id
+                                      FROM movie_cinema
+                                      WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13')
+                                        AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet')
+                                      LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
+       ('2020-12-06 20:45:00', 12, 18, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id =
+                                              (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13')
+                                          AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'),
+        false),
+       ('2020-12-06 20:45:00', 11, 5, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - SQUARE 13')
+                                         AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'Tenet')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'),
+        false),
 
-                   ('2020-12-07 21:30:00', 14, 15, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas') LIMIT 1), (SELECT id from user_account WHERE email = 'josie_story@email.com'), false),
-                   ('2020-12-07 21:30:00', 18, 7, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas') LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'), false),
-                   ('2020-12-07 21:30:00', 9, 9, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas') LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
-                   ('2020-12-07 21:30:00', 12, 18, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas') LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'), false),
-                   ('2020-12-07 21:30:00', 11, 5, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas') LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'), false),
+       ('2020-12-07 21:30:00', 14, 15, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id =
+                                              (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7')
+                                          AND movie_id =
+                                              (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'josie_story@email.com'),
+        false),
+       ('2020-12-07 21:30:00', 18, 7, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7')
+                                         AND movie_id =
+                                             (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'),
+        false),
+       ('2020-12-07 21:30:00', 9, 9, (SELECT id
+                                      FROM movie_cinema
+                                      WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7')
+                                        AND movie_id =
+                                            (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas')
+                                      LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
+       ('2020-12-07 21:30:00', 12, 18, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id =
+                                              (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7')
+                                          AND movie_id =
+                                              (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'),
+        false),
+       ('2020-12-07 21:30:00', 11, 5, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 2 - VILLAGE 7')
+                                         AND movie_id =
+                                             (SELECT m.id FROM movie m WHERE m.name = 'The Nights Before Christmas')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'),
+        false),
 
-                   ('2020-12-08 19:00:00', 14, 15, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption') LIMIT 1), (SELECT id from user_account WHERE email = 'josie_story@email.com'), false),
-                   ('2020-12-08 19:00:00', 18, 7, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption') LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'), false),
-                   ('2020-12-08 19:00:00', 9, 9, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption') LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
-                   ('2020-12-08 19:00:00', 12, 18, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption') LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'), false),
-                   ('2020-12-08 19:00:00', 11, 5, (SELECT id FROM movie_cinema WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14') AND movie_id = (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption') LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'), false);
+       ('2020-12-08 19:00:00', 14, 15, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id =
+                                              (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14')
+                                          AND movie_id =
+                                              (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'josie_story@email.com'),
+        false),
+       ('2020-12-08 19:00:00', 18, 7, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14')
+                                         AND movie_id =
+                                             (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'bernard@email.com'),
+        false),
+       ('2020-12-08 19:00:00', 9, 9, (SELECT id
+                                      FROM movie_cinema
+                                      WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14')
+                                        AND movie_id =
+                                            (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption')
+                                      LIMIT 1), (SELECT id from user_account WHERE email = 'faith.p@email.com'), false),
+       ('2020-12-08 19:00:00', 12, 18, (SELECT id
+                                        FROM movie_cinema
+                                        WHERE cinema_id =
+                                              (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14')
+                                          AND movie_id =
+                                              (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption')
+                                        LIMIT 1), (SELECT id from user_account WHERE email = 'johnnie@email.com'),
+        false),
+       ('2020-12-08 19:00:00', 11, 5, (SELECT id
+                                       FROM movie_cinema
+                                       WHERE cinema_id = (SELECT c.id FROM cinema c WHERE c.name = 'Hall 3 - STREET 14')
+                                         AND movie_id =
+                                             (SELECT m.id FROM movie m WHERE m.name = 'The Shawshank Redemption')
+                                       LIMIT 1), (SELECT id from user_account WHERE email = 'lawrence.f@email.com'),
+        false);

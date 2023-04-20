@@ -22,7 +22,7 @@ public class Customer {
     private String email;
     private String address;
 
-    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
     private List<Payment> paymentList;
 
     public Customer(String userName, String name, String surName, String email, String address) {
