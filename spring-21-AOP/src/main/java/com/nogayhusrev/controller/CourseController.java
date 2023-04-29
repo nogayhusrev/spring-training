@@ -1,5 +1,6 @@
 package com.nogayhusrev.controller;
 
+import com.nogayhusrev.annotation.LoggingAnnotation;
 import com.nogayhusrev.dto.CourseDTO;
 import com.nogayhusrev.service.CourseService;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,7 @@ public class CourseController {
         return list;
     }
 
+    @LoggingAnnotation
     @GetMapping("/{id}")
     public CourseDTO getCourseById(@PathVariable("id") Long courseId) {
         return courseService.getCourseById(courseId);
@@ -32,6 +34,7 @@ public class CourseController {
         return courseService.getCoursesByCategory(category);
     }
 
+    @LoggingAnnotation
     @PostMapping
     public CourseDTO createCourse(@RequestBody CourseDTO course) {
         return courseService.createCourse(course);
