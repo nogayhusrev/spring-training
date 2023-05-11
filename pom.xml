@@ -30,10 +30,12 @@
         <module>spring-18-REST-SchoolLab</module>
         <module>spring-19-REST-OpenAPI3</module>
         <module>spring-20-REST-Security-Keycloak-LicenseApp</module>
+        <module>spring-20-REST-Security-Keycloak-OrganizationsApp</module>
         <module>spring-21-AOP</module>
         <module>spring-22-UnitTesting-JUnit5</module>
         <module>spring-23-UnitTesting-Mockito</module>
         <module>spring-24-UnitTesting-MockMVC</module>
+        <module>spring-25-Docker</module>
     </modules>
 
     <properties>
