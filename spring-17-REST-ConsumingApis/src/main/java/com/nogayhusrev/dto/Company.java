@@ -1,16 +1,21 @@
+
 package com.nogayhusrev.dto;
 
-import com.fasterxml.jackson.annotation.*;
-
-import javax.annotation.Generated;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.Generated;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "name",
-        "catchPhrase",
-        "bs"
+    "name",
+    "catchPhrase",
+    "bs"
 })
 @Generated("jsonschema2pojo")
 public class Company {
@@ -22,7 +27,7 @@ public class Company {
     @JsonProperty("bs")
     private String bs;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("name")
     public String getName() {
